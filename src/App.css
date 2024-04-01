@@ -1,38 +1,131 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #2f3640;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 2px solid rgb(69, 69, 223);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cityInput {
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+
+.search-icon {
+  padding: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.image {
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.image img {
+  width: 160px;
+  height: 160px;
+}
+.temp,.country,.city{
+  margin-top: 5px;
+  font-size: 35px;
+  color: #333;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temp{
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.city{
+  color: #ffbc00;
+  font-weight: 400;
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.country{
+  font-size: 18px;
+  color: #857e7e;
+font-weight: 500;
+}
+.cord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.cord div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px;
+}
+.cord div span{
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.humidity-percent,.wind-percent,
+.cord div span:nth-child(2){
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  padding-top: 5px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+  height: 50px;
+}
+
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.element{
+  text-align: center;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+}
+.text{
+  font-size: 12px;
+  color: #5c5757;
 }
